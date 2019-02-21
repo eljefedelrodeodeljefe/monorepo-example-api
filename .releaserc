@@ -10,6 +10,7 @@ verifyConditions:
   - "@semantic-release/git"
 generateNotes: []
 prepare:
+  - "@semantic-release/npm"
   - "@semantic-release/git"
   - "@semantic-release/changelog"
   - {
@@ -20,7 +21,7 @@ prepare:
 publish:
   - path: "@semantic-release/exec"
     cmd: "npm run deploy"
-  - "@semantic-release/github"
+  # - "@semantic-release/github"
 success: []
 fail: []
 

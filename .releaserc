@@ -1,0 +1,32 @@
+tagFormat: ${version}
+
+branches:
+  - master
+  - name: develop
+    prerelease: 'beta'
+
+verifyConditions:
+  - "@semantic-release/git"
+  - "@semantic-release/changelog"
+generateNotes: []
+prepare:
+  - "@semantic-release/git"
+  - "@semantic-release/changelog"
+  - {
+      "path": "@semantic-release/git",
+      "assets": [
+        "package.json",
+        "package-lock.json",
+        "CHANGELOG.md"
+      ],
+      "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+    }
+publish:
+  - path: "@semantic-release/exec"
+    cmd: "npm run deploy"
+success: []
+fail: []
+
+monorepo:
+  analyzeCommits:
+    format: "atom"

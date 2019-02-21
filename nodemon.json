@@ -1,0 +1,29 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    "*.flamegraph",
+    "data",
+    "traces",
+    ".git",
+    "node_modules/**/node_modules",
+    "dumps",
+    "services",
+    "sdks"
+  ],
+  "verbose": true,
+  "execMap": {
+    "js": "node --no-lazy -r dotenv/config"
+  },
+  "watch": [
+    "index.js",
+    "lib/",
+    "tools/",
+    "test/",
+    "config.js",
+    ".env"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "sql js json md html"
+}

@@ -1,0 +1,45 @@
+{
+  "extends": [
+    "plugin:require-path-exists/recommended",
+    "standard"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "plugins": [
+    "standard",
+    "promise",
+    "import-order",
+    "require-path-exists"
+  ],
+  "root": true,
+  "rules": {
+    "import-order/import-order": 2,
+    "object-curly-spacing": [
+      2,
+      "always"
+    ],
+    "padded-blocks": [
+      "error",
+      "never"
+    ],
+    "object-curly-newline": [
+      "error",
+      {
+        "consistent": true
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "cluster/**/*.js"
+      ],
+      "rules": {
+        "require-path-exists/exists": [
+          0
+        ]
+      }
+    }
+  ]
+}

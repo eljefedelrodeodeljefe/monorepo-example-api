@@ -1,0 +1,56 @@
+{
+  "name": "monorepo-example-api",
+  "version": "0.0.0",
+  "description": " Node.js with Kubernetes / Docker via semantic release",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape 'test/**/*.spec.js'",
+    "lint": "eslint -c .eslintrc .",
+    "precommit": "npm run lint",
+    "commit": "git-cz"
+  },
+  "author": "Robert Jefe Lindstaedt <robert.lindstaedt@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "commitizen": "^3.0.5",
+    "conventional-changelog-cli": "^2.0.12",
+    "cz-conventional-changelog": "^2.1.0",
+    "dotenv": "^6.2.0",
+    "eslint": "^5.13.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-import-order": "^2.1.4",
+    "eslint-plugin-json": "^1.4.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-require-path-exists": "1.1.9",
+    "eslint-plugin-sort-requires": "^2.1.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "generate-changelog": "^1.7.1",
+    "node": "^11.10.0",
+    "nodemon": "^1.18.10",
+    "proxyquire": "^2.1.0",
+    "semantic-release": "^15.13.3",
+    "semantic-release-monorepo": "^6.1.1",
+    "sinon": "^7.2.4",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.10.1",
+    "tape-nock": "^1.6.1",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-jwt": "^5.3.1",
+    "helmet": "^3.15.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "validate-commit-msg": {
+      "types": "conventional-commit-types",
+      "helpMessage": "Use \"npm run commit\" instead, we use conventional-changelog format :) (https://github.com/commitizen/cz-cli)"
+    }
+  }
+}

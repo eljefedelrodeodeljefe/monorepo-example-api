@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "name": "API actual",
+      "path": "."
+    },
+    {
+      "name": "Service: Assets",
+      "path": "./services/analytics"
+    }
+  ],
+  "settings": {}
+}

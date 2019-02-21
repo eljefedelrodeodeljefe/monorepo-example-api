@@ -2,7 +2,7 @@
   "name": "monorepo-example-api",
   "version": "0.0.0",
   "private": true,
-  "description": " Node.js with Kubernetes / Docker via semantic release",
+  "description": "Monorepo deployment approach with Node.js and Kubernetes / Docker via semantic release.",
   "main": "index.js",
   "scripts": {
     "test": "tape 'test/**/*.spec.js'",
@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eljefedelrodeodeljefe/monorepo-example-api.git"
+    "url": "git@github.com:eljefedelrodeodeljefe/monorepo-example-api.git"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^3.0.2",

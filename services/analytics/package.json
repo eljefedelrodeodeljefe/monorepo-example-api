@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "tape 'test/**/*.spec.js'",
-    "deploy": "echo \"here goes the child DEPLOYMENT!!!!!\""
+    "deploy": "echo \"here goes the child DEPLOYMENT!!!!\""
   },
   "author": "",
   "license": "MIT",

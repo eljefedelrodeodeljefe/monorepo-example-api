@@ -9,7 +9,7 @@
     "lint": "eslint -c .eslintrc .",
     "precommit": "npm run lint",
     "commit": "git-cz",
-    "release": "semantic-release",
+    "release": "npx semantic-release -e semantic-release-monorepo",
     "deploy": "echo \"here goes the DEPLOYMENT!!!!!\""
   },
   "author": "Robert Jefe Lindstaedt <robert.lindstaedt@gmail.com>",
@@ -43,7 +43,7 @@
     "node": "^11.10.0",
     "nodemon": "^1.18.10",
     "proxyquire": "^2.1.0",
-    "semantic-release": "^15.13.3",
+    "semantic-release": "^15.6.6",
     "semantic-release-monorepo": "^6.1.1",
     "sinon": "^7.2.4",
     "tap-spec": "^5.0.0",

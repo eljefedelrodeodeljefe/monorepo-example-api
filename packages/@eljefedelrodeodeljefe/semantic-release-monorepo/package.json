@@ -1,0 +1,35 @@
+{
+  "name": "@eljefedelrodeodeljefe/semantic-release-monorepo",
+  "version": "0.0.0",
+  "description": "Plugins for `semantic-release` allowing it to be used with a monorepo.",
+  "main": "src/index.js",
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "semantic-release": "13.4.1 - 15.x.x"
+  },
+  "dependencies": {
+    "debug": "^3.1.0",
+    "execa": "^0.8.0",
+    "p-limit": "^1.2.0",
+    "pkg-up": "^2.0.0",
+    "ramda": "^0.25.0",
+    "read-pkg": "^3.0.0",
+    "semantic-release-plugin-decorators": "^1.2.1"
+  },
+  "devDependencies": {
+    "import-from": "^2.1.0",
+    "jest": "^21.2.1",
+    "lint-staged": "^6.0.0",
+    "lodash": "^4.17.11",
+    "prettier": "^1.9.2",
+    "semantic-release": "^15.0.0",
+    "semantic-release-github-pr": "^5.0.5"
+  }
+}

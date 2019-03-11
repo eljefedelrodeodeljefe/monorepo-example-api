@@ -9,7 +9,7 @@
     "lint": "eslint -c .eslintrc .",
     "precommit": "npm run lint",
     "commit": "git-cz",
-    "release": "npx semantic-release -e semantic-release-monorepo",
+    "release": "npx semantic-release -e @eljefedelrodeodeljefe/semantic-release-monorepo",
     "deploy": "echo \"here goes the DEPLOYMENT!!!!!\""
   },
   "author": "Robert Jefe Lindstaedt <robert.lindstaedt@gmail.com>",
@@ -19,6 +19,7 @@
     "url": "git@github.com:eljefedelrodeodeljefe/monorepo-example-api.git"
   },
   "devDependencies": {
+    "@eljefedelrodeodeljefe/semantic-release-monorepo": "file:packages/@eljefedelrodeodeljefe/semantic-release-monorepo",
     "@semantic-release/changelog": "^3.0.2",
     "@semantic-release/exec": "^3.3.2",
     "@semantic-release/git": "^7.0.8",
@@ -44,7 +45,6 @@
     "nodemon": "^1.18.10",
     "proxyquire": "^2.1.0",
     "semantic-release": "^16.0.0-beta.18",
-    "semantic-release-monorepo": "^6.1.1",
     "sinon": "^7.2.4",
     "tap-spec": "^5.0.0",
     "tape": "^4.10.1",

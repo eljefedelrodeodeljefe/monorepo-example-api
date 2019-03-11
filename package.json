@@ -1,6 +1,6 @@
 {
   "name": "monorepo-example-api",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "private": true,
   "description": "Monorepo deployment approach with Node.js and Kubernetes / Docker via semantic release.",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "lint": "eslint -c .eslintrc .",
     "precommit": "npm run lint",
     "commit": "git-cz",
-    "release": "npx semantic-release -e @eljefedelrodeodeljefe/semantic-release-monorepo",
+    "release": "semantic-release",
     "deploy": "echo \"here goes the DEPLOYMENT!!!!!\""
   },
   "author": "Robert Jefe Lindstaedt <robert.lindstaedt@gmail.com>",
@@ -52,6 +52,7 @@
     "validate-commit-msg": "^2.14.0"
   },
   "dependencies": {
+    "execa": "^1.0.0",
     "express": "^4.16.4",
     "express-jwt": "^5.3.1",
     "helmet": "^3.15.1"

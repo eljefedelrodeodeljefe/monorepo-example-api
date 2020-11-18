@@ -43,7 +43,7 @@
     "node": "^11.10.0",
     "nodemon": "^1.18.10",
     "proxyquire": "^2.1.0",
-    "semantic-release": "^15.13.3",
+    "semantic-release": "^17.2.3",
     "semantic-release-monorepo": "^6.1.1",
     "sinon": "^7.2.4",
     "tap-spec": "^5.0.0",
